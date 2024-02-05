@@ -24,7 +24,7 @@ def download(image_url, to_dir):
 
 def get_pages(from_page=1, to_page=10000, to_dir=None, search_keyword=''):
     workers = 16
-    url_mode = 'http://konachan.net/post?page=%s&tags=' + search_keyword
+    url_mode = 'http://yande.re/post?page=%s&tags=' + search_keyword
     xpath_images = "//a[@class='directlink largeimg' or @class='directlink smallimg']/@href"
     if not os.path.exists(to_dir):
         os.makedirs(to_dir)
